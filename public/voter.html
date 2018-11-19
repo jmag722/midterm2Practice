@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+    <script src="javascripts/Vote.js"></script>
+</head>
+
+<body id='app' ng-app='myApp' ng-controller='myCtrl'>
+    <h1>Voter Interface</h1>
+
+    <form ng-submit="incrementUpvotes(candidate)" style="margin-top30px;">
+        <div ng-repeat="candidate in candidates">
+            <input type="checkbox"></span> {{candidate.name}}
+        </div>
+        <button type="submit">Submit Votes</button>
+    </form>
+
+
+    <h1>Submitted Ballot</h1>
+
+</body>
+
+</html>
